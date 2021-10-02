@@ -1,0 +1,24 @@
+.decorate1{
+    color:rgb(253, 128, 149);
+    height:100px;
+    width:30%;
+}
+.box-menu .menu1{
+    float:left;
+    border: none;
+    position: relative;
+    text-align: start;
+  }
+  .box-menu .menu1 .txt{
+  text-align:start;
+  font-family: monospace;
+  font-size: 14px;
+  padding-top: 10px;
+  }
+  .bg2{
+      background-color: rgb(247, 228, 231);
+  }
+  .iconStyling{
+      font-size:30;
+      float: left;
+  }
