@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.js'
+import axios from 'axios'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './home'
 import './login.css'
@@ -67,8 +68,18 @@ class Login extends React.Component {
     this.setState({ formValid: fieldValidity.pwd})
     
   }
-    handleSubmit=(event)=> {
+    handleSubmit=async(event)=> {
       event.preventDefault();
+      try{
+            
+        let res=await axios.post("http://localhost:4000/login",this.state.form)
+        console.log(res)
+        }
+        catch(err)
+        {
+            console.log(err.message)
+        }
+ 
       if(this.state.form.name===''||this.state.form.pwd===''){
         let error1="Invalid username Or password"
         this.setState({formValid:true,formError:error1})
