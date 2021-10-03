@@ -1,4 +1,5 @@
 import React from 'react';
+import {Hoteldata} from'./data.js'
 import hotel1 from './assets/Hotel1.jpg'
 import './hotel.css'
 function Hotels(){
@@ -23,23 +24,24 @@ function Hotels(){
         float:"left"
 
     }
-    const Hoteldata=[
-        {
-        name:"The Golden Hotel",
-        rating:9.1,
-        loc:"rkjwek"
-    },
-    {
-        name:"The Mount Hotel",
-        rating:9.5,
-        loc:"rkjwek"
-    },
-    {
-        name:"The Europe Hotel",
-        rating:8.6,
-        loc:"rkjwek"
-    }
-]
+//     const Hoteldata=[
+//         {
+//         name:"The Golden Hotel",
+//         rating:9.1,
+//         loc:"rkjwek"
+//     },
+//     {
+//         name:"The Mount Hotel",
+//         rating:9.5,
+//         loc:"rkjwek"
+//     },
+//     {
+//         name:"The Europe Hotel",
+//         rating:8.6,
+//         loc:"rkjwek"
+//     }
+// ]
+    // const Hoteldata=JSON.Hoteldata;
     return(
         <div >
             <h4 style={{marginLeft:"190px"}}>Top Hotels</h4>

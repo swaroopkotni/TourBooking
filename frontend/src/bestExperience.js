@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css'
-// import { bestExperiencedata } from './data';
+import  {BestExperiencedata} from './data';
 import img1 from './assets/img1.jpg'
 import img2 from './assets/img2.jpg'
 // import img3 from './assets/img3.jpg'
@@ -8,28 +8,29 @@ import img4 from './assets/img4.jpg'
 import img5 from './assets/img5.jpg'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 function BestExperience(){
-  const BestExperiencedata=[
-    {
-        name:"The Golden Circle",
-        days:"3-4 days",
-        kms:"40 kms"
-    },
-    {
-       name:"Snorkelling Island",
-       days:"5-7 days",
-       kms:"40 kms"
-   },
-   {
-       name:"Snorkelling Island",
-       days:"3-4 days",
-       kms:"40 kms"
-   },
-   {
-       name:"The Golden Circle",
-       days:"6-8 days",
-       kms:"40 kms"
-   }
-]
+  
+//   const BestExperiencedata=[
+//     {
+//         name:"The Golden Circle",
+//         days:"3-4 days",
+//         kms:"40 kms"
+//     },
+//     {
+//        name:"Snorkelling Island",
+//        days:"5-7 days",
+//        kms:"40 kms"
+//    },
+//    {
+//        name:"Snorkelling Island",
+//        days:"3-4 days",
+//        kms:"40 kms"
+//    },
+//    {
+//        name:"The Golden Circle",
+//        days:"6-8 days",
+//        kms:"40 kms"
+//    }
+// ]
     const imgStyle={
         height:"200px",width:"160px"
     }
@@ -80,3 +81,4 @@ function BestExperience(){
     )
 }
 export default BestExperience;
+

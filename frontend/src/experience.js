@@ -1,50 +1,36 @@
-import img1 from './assets/img1.jpg'
-import img2 from './assets/img2.jpg'
-// import img3 from './assets/img3.jpg'
-import img4 from './assets/img4.jpg'
-import img5 from './assets/img5.jpg'
+import  './assets/img1.jpg'
+import  './assets/img2.jpg'
+import  './assets/img3.jpg'
+import  './assets/img4.jpg'
+import './assets/img5.jpg'
+import {BestExperiencedata} from './data';
 function Experience(){
-const BestExperiencedata=[
-    {
-        name:"The Golden Circle",
-        days:"3-4 days",
-        kms:"40 kms"
-    },
-    {
-       name:"Snorkelling Island",
-       days:"5-7 days",
-       kms:"40 kms"
-   },
-   {
-       name:"Snorkelling Island",
-       days:"3-4 days",
-       kms:"40 kms"
-   },
-   {
-       name:"The Golden Circle",
-       days:"6-8 days",
-       kms:"40 kms"
-   }
-]
+
     const imgStyle={
-        height:"200px",width:"100%"
+        height:"300px",width:"100%"
     }
     const Layout={
-        margin:"0px 10px 30px 170px"
+        margin:"0px 10px 30px 170px",
+        float:"left"
+        
     }
-    const TextSize={
-      font:5,
-      marginLeft:"20px"
-    }
-   
+    
+    var Arr=BestExperiencedata.map((data)=>{
+        return(
+            
+          <div className="card" style={{float:"left",width:"250px",marginRight:"30px"}}>
+        <a href="#y" ><img className="border2 " style={imgStyle} src={data.src} alt="Card  cap"/>
+        <div className="card-title">{data.name}<br/><i class="fas fa-calendar-week"></i>&nbsp;{data.days}&nbsp;{data.kms}</div></a>
+        </div> 
+        )
+})
     return(
 <div>
 
 <h4 className="text-dark" style={{marginLeft:"190px"}}>Best Experiences</h4><div className="text-danger" style={{position:"absolute",marginTop:"0px",marginLeft:"1000px"}}></div><br/>
 <div style={Layout}>
-<div>
-  
-</div>
+   {Arr}
+
 </div>
 
 </div>
@@ -52,3 +38,6 @@ const BestExperiencedata=[
     
     }
     export default Experience;
+
+
+
