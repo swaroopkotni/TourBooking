@@ -11,16 +11,24 @@ function Experience(){
     }
     const Layout={
         margin:"0px 10px 30px 170px",
-        float:"left"
-        
+        float:"left" 
+    }
+    const TextStyle={
+        font:5,
+        color:"black",
+    }
+    const cardStyle={
+        float:"left",width:"250px",marginRight:"30px",borderRadius:"5px"
+
     }
     
     var Arr=BestExperiencedata.map((data)=>{
         return(
             
-          <div className="card" style={{float:"left",width:"250px",marginRight:"30px"}}>
+          <div className="card border2" style={cardStyle}>
         <a href="#y" ><img className="border2 " style={imgStyle} src={data.src} alt="Card  cap"/>
-        <div className="card-title">{data.name}<br/><i class="fas fa-calendar-week"></i>&nbsp;{data.days}&nbsp;{data.kms}</div></a>
+        <div className="card-title" style={TextStyle}><center>{data.name}<br/><i class="fas fa-calendar-week"></i>&nbsp;{data.days}&nbsp;{data.kms}<br/>
+        <button className="btn-success"  onClick="/">Book Hotel</button></center></div></a>
         </div> 
         )
 })
