@@ -73,7 +73,9 @@ class Login extends React.Component {
       try{
             
         let res=await axios.post("http://localhost:4000/login",this.state.form)
-        console.log(res)
+        
+        
+        // console.log(res);
         }
         catch(err)
         {
